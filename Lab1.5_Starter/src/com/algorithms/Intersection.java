@@ -19,7 +19,7 @@ public class Intersection {
         return result;
     }
 
-    public List<Integer> intersectionFast(int[]a, int[]b) {
+    public List<Integer> getIntersectingValuesFast(int[]a, int[]b) {
         List<Integer> retList = new ArrayList<>();
         int count = 0;
         Arrays.sort(a);
@@ -50,7 +50,7 @@ public class Intersection {
         int[] numbers1 = new int[]{66, 24, 75, 22, 12, 87};
         int[] numbers2 = new int[]{32, 41, 98, 66, 39, 24};
 
-        List<Integer> result = new Intersection().intersectionFast(numbers1, numbers2);
+        List<Integer> result = new Intersection().getIntersectingValuesFast(numbers1, numbers2);
         System.out.println(result);
 
     }

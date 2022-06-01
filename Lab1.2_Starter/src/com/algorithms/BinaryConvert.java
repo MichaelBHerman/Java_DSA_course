@@ -30,7 +30,15 @@ public class BinaryConvert {
 
     public static int convertFromOctal(String octal) {
 // implement here, return decimal int converted from octal String
-        return 0;
+        int conversion = 1;
+        int result = 0;
+        for (int i = octal.length()-1; i>=0; i--){
+            int num = Integer.parseInt(Character.toString(octal.charAt(i)));
+            result += num*conversion;
+            conversion *= 8;
+        }
+
+        return result;
     }
 
 
